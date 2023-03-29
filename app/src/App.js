@@ -125,7 +125,7 @@ function App() {
                 }}
               >
                 <span className="changecolor">SAVE THE DATES: </span>May 12th -
-                May 24th, 2023&nbsp;
+                May 14th, 2023&nbsp;
                 <br />
                 <span className="changecolor">WHERE IS IT? </span>Memphis,
                 Tennessee (Memphis Islamic Center, 10299 Humphrey Road)
