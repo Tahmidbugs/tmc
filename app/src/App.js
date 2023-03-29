@@ -88,12 +88,7 @@ function App() {
                 Come To Success
               </h1>
             </div>
-            <img
-              src={tmc}
-              alt="TMC logo"
-              className="logo"
-              style={{ width: 120 }}
-            />
+            <img src={tmc} alt="TMC logo" className="logo tmclogo" />
           </div>
         </div>
         <div className="bodyWrapper">
@@ -122,7 +117,7 @@ function App() {
                 className="changecolor"
               >
                 COME TO SUCCESS DA'WAH CONFERENCE <br />
-                <span style={{ fontSize: 20 }}>IS RIGHT AROUND THE CORNER</span>
+                <span style={{ fontSize: 15 }}>IS RIGHT AROUND THE CORNER</span>
               </h1>
               <h3
                 style={{

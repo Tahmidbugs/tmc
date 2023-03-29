@@ -99,6 +99,9 @@ padding: 30px;
   .logo {
     width: 150px;
   }
+  .tmclogo{
+    width: 120px;
+  }
 
   .title{
     font-family: 'Space Grotesk', sans-serif;
@@ -228,10 +231,11 @@ padding: 30px;
     }
 
     
-    .logo {
+    .logo .tmclogo {
     margin: 20px 0;
     width:50px;
     }
+   
     h5{
         font-size: x-small;
     }
