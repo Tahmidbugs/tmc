@@ -1,5 +1,5 @@
 .App {
-    background-color: #211d1d;
+    background-color: #121010;
     color: #fff;
     font-family: "Roboto", sans-serif;
     min-height: 100vh;
@@ -30,6 +30,19 @@ z-index: 1;
 border-radius: 50%; */
 
   }
+  .lottie-wrapped{
+    /* position: absolute; */
+width: 30%;
+margin-left:auto;
+margin-right: auto;
+/* top: 0;
+right: 10px;
+padding: 10px; */
+z-index: 1;
+/* background-color: #DDD9D9;
+border-radius: 50%; */
+
+  }
   
   .content-wrapper {
     display: flex;
@@ -41,7 +54,7 @@ border-radius: 50%; */
   }
   .content-wrapperone{
     /* background-color: #0f0d0d; */
-    background-color: #0f0d0d;
+    background-color: #231f1f;
 
 /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
 border-bottom-right-radius: 80px;
@@ -64,13 +77,13 @@ padding: 30px;
         display: flex;
         flex-direction: column;
         justify-content: center;
-        background-color: #0f0d0d;
+        background-color: #231f1f;
         margin-top: 40px;
         padding: 30px;
         padding-bottom: 10px;
         border-radius: 20px;
         width: 80vw;
-        background-color: #121010;
+        /* background-color: #121010; */
         
         /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
       
@@ -133,7 +146,16 @@ padding: 30px;
     color: #676869;
   }
 
+  .slide-in {
+    transform: translateX(-100%);
+    animation: slide-in 1s forwards;
+  }
   
+  @keyframes slide-in {
+    to {
+      transform: translateX(0%);
+    }
+  }
   
   .glow-on-hover:focus {
     outline: none;
@@ -208,7 +230,7 @@ padding: 30px;
     
     .logo {
     margin: 20px 0;
-    width:30px;
+    width:50px;
     }
     h5{
         font-size: x-small;
@@ -230,6 +252,7 @@ padding: 30px;
     .bodyWrappertwo{
         display: flex;
         flex-direction: column;
+        margin:0 0px;
     }
     .glow-on-hover{
         display: inline-block;
@@ -260,7 +283,7 @@ padding: 30px;
     .lottie-wrapp{
         position: absolute;
     width: 13%;
-    top: 0;
+    top: 70px;
     left: -10px;
     padding: 10px;
     z-index: 1;
@@ -272,7 +295,7 @@ padding: 30px;
       .lottie-wraptwo{
         position: absolute;
     width: 13%;
-    top: 0;
+    top: 70px;
     right: -10px;
     padding: 10px;
     z-index: 1;

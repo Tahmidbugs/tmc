@@ -7,6 +7,7 @@ import "./App.css";
 import AnimatedCursor from "react-animated-cursor";
 import animationDatas from "./lotties/twork.json";
 import animationDatas2 from "./lotties/mwork.json";
+import animationDatas3 from "./lotties/work.json";
 
 import Lottie from "react-lottie";
 function App() {
@@ -66,7 +67,7 @@ function App() {
               src={iera}
               alt="IERA logo"
               className="logo"
-              style={{ marginRight: 20 }}
+              // style={{ marginRight: 20 }}
             />
             <div
               style={{
@@ -87,7 +88,12 @@ function App() {
                 Come To Success
               </h1>
             </div>
-            <img src={tmc} alt="TMC logo" className="logo" />
+            <img
+              src={tmc}
+              alt="TMC logo"
+              className="logo"
+              style={{ width: 120 }}
+            />
           </div>
         </div>
         <div className="bodyWrapper">
@@ -108,16 +114,29 @@ function App() {
                 alignItems: "center",
               }}
             >
+              <h1
+                style={{
+                  textAlign: "center",
+                  fontFamily: "Righteous",
+                }}
+                className="changecolor"
+              >
+                COME TO SUCCESS DA'WAH CONFERENCE <br />
+                <span style={{ fontSize: 20 }}>IS RIGHT AROUND THE CORNER</span>
+              </h1>
               <h3
                 style={{
                   textAlign: "center",
                   fontFamily: "Space Grotesk",
                 }}
               >
-                This year we will be attending a Dawah Conference with IERA and
-                TMC lead by Sheikh Anwar Arafat. We will have Sheikh Hassan
-                Sultan as a part of the conference as well, accompanying
-                students from Tampa to this trip in sha Allah.
+                Get ready to experience an unforgettable Dawah Conference with
+                IERA and TMC, featuring the dynamic Sheikh Anwar Arafat and the
+                esteemed Sheikh Hassan Sultan, joining forces to bring you an
+                event like no other. Students from Tampa will also be in
+                attendance, adding to the excitement and energy of this
+                must-attend conference. Don't miss out on this opportunity to
+                enrich your faith. Join us now!
               </h3>
               <h4
                 style={{
@@ -141,8 +160,8 @@ function App() {
                   marginRight: 20,
                 }}
               >
-                <img src={anwar} className="person" />
-                <h5>Sheikh Anwar Arafat</h5>
+                <img src={anwar} className="person slide-in" />
+                <h5 className="slide-in">Sheikh Anwar Arafat</h5>
               </div>
               <div
                 style={{
@@ -152,8 +171,8 @@ function App() {
                   justifyContent: "center",
                 }}
               >
-                <img src={hassan} className="person" />
-                <h5>Sheikh Hassan Sultan</h5>
+                <img src={hassan} className="person slide-in" />
+                <h5 className="slide-in">Sheikh Hassan Sultan</h5>
               </div>
             </div>
           </div>
@@ -188,11 +207,23 @@ function App() {
           className="form-wrapper"
           id="form"
           style={{
-            marginTop: 200,
+            marginTop: 100,
+            display: "flex",
+            flexDirection: "column",
             alignSelf: "center",
             alignItems: "center",
           }}
         >
+          {animationDatas3 && (
+            <a>
+              <div className="lottie-wrapped">
+                <Lottie
+                  options={{ animationData: animationDatas3 }}
+                  eventListeners={[{}]}
+                />
+              </div>
+            </a>
+          )}
           <h4
             stlye={{
               fontFamily: "Space Grotesk",
