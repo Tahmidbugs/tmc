@@ -1,0 +1,286 @@
+.App {
+    background-color: #211d1d;
+    color: #fff;
+    font-family: "Roboto", sans-serif;
+    min-height: 100vh;
+    background-image: url("https://www.transparenttextures.com/patterns/black-scales.png");
+    width: 100%
+  }
+
+  .lottie-wrapp{
+    position: absolute;
+width: 10%;
+top: 0;
+left: 10px;
+padding: 10px;
+z-index: 1;
+/* background-color: #DDD9D9;
+border-radius: 50%; */
+
+
+  }
+  .lottie-wraptwo{
+    position: absolute;
+width: 10%;
+top: 0;
+right: 10px;
+padding: 10px;
+z-index: 1;
+/* background-color: #DDD9D9;
+border-radius: 50%; */
+
+  }
+  
+  .content-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    margin: 0 auto;
+  }
+  .content-wrapperone{
+    /* background-color: #0f0d0d; */
+    background-color: #0f0d0d;
+
+/* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
+border-bottom-right-radius: 80px;
+border-bottom-left-radius: 80px;
+margin-top: -45px;
+display: flex;
+align-items: center;
+  }
+
+  .content-wrappertwo{
+    display: flex;
+justify-content: space-between;
+align-items: center;
+padding: 30px;
+
+  }
+  .bodyWrapper{
+   
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        background-color: #0f0d0d;
+        margin-top: 40px;
+        padding: 30px;
+        padding-bottom: 10px;
+        border-radius: 20px;
+        width: 80vw;
+        background-color: #121010;
+        
+        /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
+      
+  }
+  
+  .logo-wrapper {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 40px;
+    width: 100%;
+  }
+  
+  .logo {
+    width: 150px;
+  }
+
+  .title{
+    font-family: 'Space Grotesk', sans-serif;
+
+  }
+
+  .glow-on-hover {
+    display: inline-block;
+    text-align: center;
+    padding: 12px 24px;
+    border: 2px solid rgb(42, 51, 57);
+    border-radius: 50px;
+    transition: all 0.3s ease-out;
+    color: rgb(223, 213, 213);
+    font-size: 18px;
+    font-weight: bold;
+    text-decoration: none;
+    background-color: rgb(48, 54, 59);
+  }
+  .changecolor{
+    transition: color 3s ease-in-out;
+      animation: color-change 3s ease-in-out infinite;
+  }
+  
+  @keyframes color-change {
+    0% {
+      color: rgb(98, 104, 182);
+    }
+    25% {
+      color: rgb(106, 106, 184);
+    }
+    50% {
+      color: rgb(99, 137, 202);
+    }
+    75% {
+      color: rgb(79, 122, 175);
+    }
+    100% {
+      color: rgb(80, 113, 205);
+    }
+  }
+  
+  .glow-on-hover:hover {
+    background-color:rgb(43, 54, 62);
+    color: #676869;
+  }
+
+  iframe{
+    width: 600px;
+    height:800px;
+  }
+  
+  .glow-on-hover:focus {
+    outline: none;
+    box-shadow: 0 0 10px #04a5ff;
+  }
+  .bounce {
+    animation: bounce 2s infinite;
+  }
+  
+  @keyframes bounce {
+    0% {
+      transform: translate3d(0, 0, 0);
+    }
+    50% {
+      transform: translate3d(0, -10px, 0);
+    }
+    100% {
+      transform: translate3d(0, 0, 0);
+    }
+  }
+
+  /* Futuristic style */
+  .glow-on-hover {
+    position: relative;
+    /* z-index: 9; */
+    overflow: hidden;
+    background: linear-gradient(
+      45deg,
+      rgba(255, 255, 255, 0.1),
+      rgba(255, 255, 255, 0.05),
+      rgba(255, 255, 255, 0.1)
+    );
+    background-size: 400%;
+  }
+  .person{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-top: 20px;
+    
+}
+  
+  .glow-on-hover:hover {
+    color: #272727;
+    background-position: 100%;
+  }
+  
+  .glow-on-hover:focus {
+    color: #fff;
+    background-position: 100%;
+  }
+  
+  @media screen and (max-width: 768px) {
+    .content-wrapper {
+    display: flex;
+    flex-direction: column;
+    }
+    iframe{
+        width: 350px;
+        height:700px;
+      }
+    .App{
+        width:100%;
+    }
+    .lottie-wrapp{
+        width: 10%;
+    }
+    h3{
+        font-size:small
+    }
+
+    
+    .logo {
+    margin: 20px 0;
+    width:30px;
+    }
+    h5{
+        font-size: x-small;
+    }
+    h4{
+        font-size: small;
+    }
+    h1{
+        font-size: xx-large;
+    }
+    .bodyWrapper {
+    padding: 30px;
+    width:80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    }
+    .bodyWrappertwo{
+        display: flex;
+        flex-direction: column;
+    }
+    .glow-on-hover{
+        display: inline-block;
+        text-align: center;
+        padding: 10px 10px;
+        border: 2px solid rgb(42, 51, 57);
+        border-radius: 50px;
+        transition: all 0.3s ease-out;
+        color: rgb(223, 213, 213);
+        font-size: 14px;
+        font-weight: bold;
+        text-decoration: none;
+        background-color: rgb(48, 54, 59);
+    }
+    
+    .person {
+    width: 100px;
+    height: 100px;
+    }
+    
+    .description-text {
+    margin: 30px;
+    }
+    
+    .form-wrapper {
+    margin-top: 30px;
+    }
+    .lottie-wrapp{
+        position: absolute;
+    width: 13%;
+    top: 0;
+    left: -10px;
+    padding: 10px;
+    z-index: 1;
+    /* background-color: #DDD9D9;
+    border-radius: 50%; */
+    
+    
+      }
+      .lottie-wraptwo{
+        position: absolute;
+    width: 13%;
+    top: 0;
+    right: -10px;
+    padding: 10px;
+    z-index: 1;
+    /* background-color: #DDD9D9;
+    border-radius: 50%; */
+    
+      }
+    }
