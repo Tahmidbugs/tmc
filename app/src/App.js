@@ -83,6 +83,7 @@ function App() {
                 style={{
                   marginTop: -20,
                   fontFamily: "Righteous",
+                  textAlign: "center",
                 }}
               >
                 Come To Success
