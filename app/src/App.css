@@ -133,10 +133,7 @@ padding: 30px;
     color: #676869;
   }
 
-  iframe{
-    width: 600px;
-    height:800px;
-  }
+  
   
   .glow-on-hover:focus {
     outline: none;

@@ -11,7 +11,7 @@ import animationDatas2 from "./lotties/mwork.json";
 import Lottie from "react-lottie";
 function App() {
   const googleFormsEmbedCode =
-    '<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSd28udKVEu-i7-xKqMW3FfAK-FOB-TwJpfyk9VfjmtBTl6HOQ/viewform?embedded=true" width="640" height="382" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>';
+    '<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSd28udKVEu-i7-xKqMW3FfAK-FOB-TwJpfyk9VfjmtBTl6HOQ/viewform?embedded=true" width="600" height="1082" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>';
 
   return (
     <div className="App">
@@ -202,7 +202,12 @@ function App() {
           >
             Fill out the quick interest form to save your spot!
           </h4>
-          <iframe title="Google Forms" srcDoc={googleFormsEmbedCode} />
+          <iframe
+            title="Google Forms"
+            srcDoc={googleFormsEmbedCode}
+            width="600"
+            height="1080"
+          />
         </div>
       </div>
     </div>
