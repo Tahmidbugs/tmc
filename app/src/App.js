@@ -124,8 +124,8 @@ function App() {
                   e.currentTarget.style.transform = "scale(1)";
                 }}
               />
-              <h5 className="slide-in" style={{ fontFamily: "Space Grotesk" }}>
-                Sheikh Anwar Arafat
+              <h5 className="slide-in" style={{ fontFamily: "Genos" }}>
+                SHEIKH ANWAR ARAFAT
               </h5>
             </div>
             <h1
@@ -162,8 +162,8 @@ function App() {
                   e.currentTarget.style.transform = "scale(1)";
                 }}
               />
-              <h5 className="slide-in" style={{ fontFamily: "Space Grotesk" }}>
-                Sheikh Hassan Sultan
+              <h5 className="slide-in" style={{ fontFamily: "Genos" }}>
+                SHEIKH HASSAN SULTAN
               </h5>
             </div>
           </div>
@@ -186,7 +186,7 @@ function App() {
               <h2
                 style={{
                   textAlign: "center",
-                  fontFamily: "Space Grotesk",
+                  fontFamily: "Genos",
                   textTransform: "uppercase",
                   fontStyle: "italic",
                   fontWeight: "bold",
@@ -222,7 +222,7 @@ function App() {
             className="description-text"
             style={{
               textAlign: "center",
-              fontFamily: "Space Grotesk",
+              fontFamily: "Genos",
               color: "#cdb976",
             }}
           >
