@@ -17,7 +17,7 @@ import Lottie from "react-lottie";
 import CountdownTimer from "./components/CountdownTimer";
 function App() {
   const googleFormsEmbedCode =
-    '<iframe src="https://docs.google.com/forms/d/e/1FAIpQLScZSG3ERaPIYhBclG1NOMkO6Jm5hhwVj7rVrqsIy5Jw8Heeow/viewform?embedded=true" width="640" height="2685" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>';
+    '<iframe src="https://docs.google.com/forms/d/e/1FAIpQLScZSG3ERaPIYhBclG1NOMkO6Jm5hhwVj7rVrqsIy5Jw8Heeow/viewform?embedded=true" width="740" height="2685" frameborder="0" marginheight="0" marginwidth="220">Loading…</iframe>';
 
   return (
     <div className="App">
@@ -82,12 +82,7 @@ function App() {
                 justifyContent: "center",
               }}
             >
-              <img
-                src={logo}
-                alt="IERA logo"
-                className="logo"
-                style={{ width: 350, marginTop: 40 }}
-              />
+              <img src={logo} alt="IERA logo" className="logo2" />
               {/* <h1
                 className="title changecolor"
                 style={{
@@ -105,6 +100,74 @@ function App() {
         <div className="bodyWrapper">
           {" "}
           <h4>‏اَلسَلامُ عَلَيْكُم وَرَحْمَةُ اَللهِ وَبَرَكاتُهُ</h4>
+          <div className="headingwrap">
+            <div
+              style={{
+                display: "flex",
+                flexDirection: "column",
+                alignItems: "center",
+                justifyContent: "center",
+                marginRight: 20,
+              }}
+            >
+              <img
+                src={anwar}
+                className="person"
+                style={{
+                  transition: "transform 0.3s ease-in-out",
+                  boxShadow: "5px 20px 20px rgba(0, 0, 0, 0.5)",
+                }}
+                onMouseEnter={(e) => {
+                  e.currentTarget.style.transform = "scale(1.2)";
+                }}
+                onMouseLeave={(e) => {
+                  e.currentTarget.style.transform = "scale(1)";
+                }}
+              />
+              <h5 className="slide-in" style={{ fontFamily: "Space Grotesk" }}>
+                Sheikh Anwar Arafat
+              </h5>
+            </div>
+            <h1
+              style={{
+                textAlign: "center",
+                fontFamily: "Righteous",
+                marginLeft: 50,
+                marginRight: 50,
+              }}
+              className="changecolor"
+            >
+              COME TO SUCCESS DA'WAH CONFERENCE <br />
+              <span style={{ fontSize: 15 }}>IS RIGHT AROUND THE CORNER</span>
+            </h1>
+            <div
+              style={{
+                display: "flex",
+                flexDirection: "column",
+                alignItems: "center",
+                justifyContent: "center",
+              }}
+            >
+              <img
+                src={hassan}
+                className="person"
+                style={{
+                  transition: "transform 0.3s ease-in-out",
+                  boxShadow: "5px 20px 20px rgba(0, 0, 0, 0.5)",
+                }}
+                onMouseEnter={(e) => {
+                  e.currentTarget.style.transform = "scale(1.2)";
+                }}
+                onMouseLeave={(e) => {
+                  e.currentTarget.style.transform = "scale(1)";
+                }}
+              />
+              <h5 className="slide-in" style={{ fontFamily: "Space Grotesk" }}>
+                Sheikh Hassan Sultan
+              </h5>
+            </div>
+          </div>
+          <CountdownTimer targetDate="2023-05-12T00:00:00" />
           <div
             style={{
               display: "flex",
@@ -120,96 +183,54 @@ function App() {
                 alignItems: "center",
               }}
             >
-              <h1
-                style={{
-                  textAlign: "center",
-                  fontFamily: "Righteous",
-                }}
-                className="changecolor"
-              >
-                COME TO SUCCESS DA'WAH CONFERENCE <br />
-                <span style={{ fontSize: 15 }}>IS RIGHT AROUND THE CORNER</span>
-              </h1>
-              <CountdownTimer targetDate="2023-05-12T00:00:00" />
-              <h3
+              <h2
                 style={{
                   textAlign: "center",
                   fontFamily: "Space Grotesk",
+                  textTransform: "uppercase",
+                  fontStyle: "italic",
+                  fontWeight: "bold",
+                  color: "#cdb976",
                 }}
               >
                 Get ready to experience an unforgettable Dawah Conference with
                 IERA and TMC, featuring the dynamic Sheikh Anwar Arafat and the
                 esteemed Sheikh Hassan Sultan, joining forces to bring you an
-                event like no other. Students from Tampa will also be in
-                attendance, adding to the excitement and energy of this
-                must-attend conference. Don't miss out on this opportunity to
-                enrich your faith. Join us now!
-              </h3>
-              <h4
+                event like no other.
+              </h2>
+              <h3
                 style={{
                   textAlign: "center",
+                  color: "#cdb976",
+                  textAlign: "center",
+                  fontFamily: "Space Grotesk",
+                  textTransform: "uppercase",
+                  fontStyle: "italic",
+                  fontWeight: "bold",
                 }}
               >
-                <span className="changecolor">SAVE THE DATES: </span>May 12th -
-                May 14th, 2023&nbsp;
+                <span className="changecolor">SAVE THE DATES: </span>
+                May 12th - May 14th, 2023&nbsp;
                 <br />
                 <span className="changecolor">WHERE IS IT? </span>Memphis,
                 Tennessee (Memphis Islamic Center, 10299 Humphrey Road)
-              </h4>
+              </h3>
             </div>
-            <div style={{ display: "flex" }}>
-              <div
-                style={{
-                  display: "flex",
-                  flexDirection: "column",
-                  alignItems: "center",
-                  justifyContent: "center",
-                  marginRight: 20,
-                }}
-              >
-                <img
-                  src={anwar}
-                  className="person"
-                  style={{ transition: "transform 0.3s ease-in-out" }}
-                  onMouseEnter={(e) => {
-                    e.currentTarget.style.transform = "scale(1.2)";
-                  }}
-                  onMouseLeave={(e) => {
-                    e.currentTarget.style.transform = "scale(1)";
-                  }}
-                />
-                <h5 className="slide-in">Sheikh Anwar Arafat</h5>
-              </div>
-              <div
-                style={{
-                  display: "flex",
-                  flexDirection: "column",
-                  alignItems: "center",
-                  justifyContent: "center",
-                }}
-              >
-                <img
-                  src={hassan}
-                  className="person"
-                  style={{ transition: "transform 0.3s ease-in-out" }}
-                  onMouseEnter={(e) => {
-                    e.currentTarget.style.transform = "scale(1.2)";
-                  }}
-                  onMouseLeave={(e) => {
-                    e.currentTarget.style.transform = "scale(1)";
-                  }}
-                />
-                <h5 className="slide-in">Sheikh Hassan Sultan</h5>
-              </div>
-            </div>
+            <div style={{ display: "flex" }}></div>
           </div>
           <h3
             className="description-text"
-            style={{ textAlign: "center", fontFamily: "Space Grotesk" }}
+            style={{
+              textAlign: "center",
+              fontFamily: "Space Grotesk",
+              color: "#cdb976",
+            }}
           >
             The conference will include discussions on the Prophetic strategies
             of giving dawah, catering it to the youth, and engaging in the study
-            of dawah.
+            of dawah. Students from Tampa will also be in attendance, adding to
+            the excitement and energy of this must-attend conference. Don't miss
+            out on this opportunity to enrich your faith. Join us now!
           </h3>
           <div
             style={{
@@ -265,7 +286,7 @@ function App() {
           <iframe
             title="Google Forms"
             srcDoc={googleFormsEmbedCode}
-            width="600"
+            width="800"
             height="1080"
           />
         </div>
@@ -288,6 +309,7 @@ const Schedule = () => {
         borderWidth: 10,
         borderStyle: "solid",
         marginTop: 120,
+        fontFamily: "Righteous",
       }}
     >
       <div className="schedule">
