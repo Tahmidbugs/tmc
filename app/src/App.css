@@ -167,6 +167,13 @@ padding: 30px;
   .bounce {
     animation: bounce 2s infinite;
   }
+  .schedule{
+    display: flex;
+flex-direction: row;
+justify-content: space-evenly;
+align-items: center;
+width: 100%;
+  }
   
   @keyframes bounce {
     0% {
@@ -310,5 +317,8 @@ padding: 30px;
     /* background-color: #DDD9D9;
     border-radius: 50%; */
     
+      }
+      .schedule{
+        flex-direction: column;
       }
     }

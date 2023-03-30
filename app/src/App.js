@@ -2,17 +2,22 @@ import React from "react";
 import iera from "./assets/iera.png";
 import tmc from "./assets/tmc.png";
 import anwar from "./assets/anwar.png";
+import logo from "./assets/logo.png";
+
 import hassan from "./assets/hassan.jpg";
 import "./App.css";
 import AnimatedCursor from "react-animated-cursor";
 import animationDatas from "./lotties/twork.json";
 import animationDatas2 from "./lotties/mwork.json";
 import animationDatas3 from "./lotties/work.json";
+import { GiTicket } from "react-icons/gi";
+// import { IconName } from "react-icons/gi";
 
 import Lottie from "react-lottie";
+import CountdownTimer from "./components/CountdownTimer";
 function App() {
   const googleFormsEmbedCode =
-    '<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSd28udKVEu-i7-xKqMW3FfAK-FOB-TwJpfyk9VfjmtBTl6HOQ/viewform?embedded=true" width="600" height="1082" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>';
+    '<iframe src="https://docs.google.com/forms/d/e/1FAIpQLScZSG3ERaPIYhBclG1NOMkO6Jm5hhwVj7rVrqsIy5Jw8Heeow/viewform?embedded=true" width="640" height="2685" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>';
 
   return (
     <div className="App">
@@ -77,8 +82,13 @@ function App() {
                 justifyContent: "center",
               }}
             >
-              <h5 style={{ textAlign: "center" }}>IERA and TMC presents</h5>
-              <h1
+              <img
+                src={logo}
+                alt="IERA logo"
+                className="logo"
+                style={{ width: 350, marginTop: 40 }}
+              />
+              {/* <h1
                 className="title changecolor"
                 style={{
                   marginTop: -20,
@@ -87,7 +97,7 @@ function App() {
                 }}
               >
                 Come To Success
-              </h1>
+              </h1> */}
             </div>
             <img src={tmc} alt="TMC logo" className="logo tmclogo" />
           </div>
@@ -120,6 +130,7 @@ function App() {
                 COME TO SUCCESS DA'WAH CONFERENCE <br />
                 <span style={{ fontSize: 15 }}>IS RIGHT AROUND THE CORNER</span>
               </h1>
+              <CountdownTimer targetDate="2023-05-12T00:00:00" />
               <h3
                 style={{
                   textAlign: "center",
@@ -156,7 +167,17 @@ function App() {
                   marginRight: 20,
                 }}
               >
-                <img src={anwar} className="person slide-in" />
+                <img
+                  src={anwar}
+                  className="person"
+                  style={{ transition: "transform 0.3s ease-in-out" }}
+                  onMouseEnter={(e) => {
+                    e.currentTarget.style.transform = "scale(1.2)";
+                  }}
+                  onMouseLeave={(e) => {
+                    e.currentTarget.style.transform = "scale(1)";
+                  }}
+                />
                 <h5 className="slide-in">Sheikh Anwar Arafat</h5>
               </div>
               <div
@@ -167,7 +188,17 @@ function App() {
                   justifyContent: "center",
                 }}
               >
-                <img src={hassan} className="person slide-in" />
+                <img
+                  src={hassan}
+                  className="person"
+                  style={{ transition: "transform 0.3s ease-in-out" }}
+                  onMouseEnter={(e) => {
+                    e.currentTarget.style.transform = "scale(1.2)";
+                  }}
+                  onMouseLeave={(e) => {
+                    e.currentTarget.style.transform = "scale(1)";
+                  }}
+                />
                 <h5 className="slide-in">Sheikh Hassan Sultan</h5>
               </div>
             </div>
@@ -198,6 +229,8 @@ function App() {
             </h5>
           </div>
         </div>
+
+        <Schedule />
 
         <div
           className="form-wrapper"
@@ -241,4 +274,108 @@ function App() {
   );
 }
 
+const Schedule = () => {
+  return (
+    <div
+      style={{
+        display: "flex",
+        flexDirection: "column",
+        alignItems: "center",
+        backgroundColor: "",
+        padding: "20px",
+        borderRadius: "10px",
+        borderColor: "#F5BC02",
+        borderWidth: 10,
+        borderStyle: "solid",
+        marginTop: 120,
+      }}
+    >
+      <div className="schedule">
+        <div style={{ textAlign: "center" }}>
+          <GiTicket color="#F5BC02" size={50} />
+          <h4 style={{ marginBottom: "10px" }}>Ticket Price</h4>
+          <div
+            style={{
+              backgroundColor: "#F5BC02",
+              color: "white",
+              padding: "10px 20px",
+              borderRadius: "20px",
+            }}
+          >
+            <h2 style={{ margin: 0 }}>$250/person</h2>
+          </div>
+        </div>
+        <div
+          style={{
+            width: 0,
+            borderColor: "#F5BC02",
+            height: 200,
+            borderWidth: 2,
+            borderStyle: "solid",
+            marginLeft: 20,
+            marginRight: 15,
+          }}
+        ></div>
+        <div style={{ textAlign: "center" }}>
+          <h4 style={{ marginBottom: "10px" }}>Day 1</h4>
+          <ul style={{ listStyle: "none", padding: 0 }}>
+            <li>10:00 AM - Registration</li>
+            <li>11:00 AM - Opening Ceremony</li>
+            <li>01:00 PM - Lunch Break</li>
+            <li>02:00 PM - Why do Da'waah</li>
+            <li>03:30 PM - Etiquettes of Da'wah</li>
+            <li>04:30 PM - Prayer Break</li>
+            <li>05:00 PM - Sheikh Hassan Sultan's lecture</li>
+            <li>06:30 PM - End of Day 1</li>
+          </ul>
+        </div>
+        <div
+          style={{
+            width: 0,
+            borderColor: "#F5BC02",
+            height: 200,
+            borderWidth: 2,
+            borderStyle: "solid",
+            marginLeft: 20,
+            marginRight: 15,
+          }}
+        ></div>
+        <div style={{ textAlign: "center" }}>
+          <h4 style={{ marginBottom: "10px" }}>Day 2</h4>
+          <ul style={{ listStyle: "none", padding: 0 }}>
+            <li>10:00 AM - Registration</li>
+            <li>11:00 AM - Qur'an Recitation</li>
+            <li>01:00 PM - Dawa'h preliminaries</li>
+            <li>02:00 PM - Sheikh Anwar Arafat's lecture</li>
+            <li>03:30 PM - Q&A Session</li>
+            <li>04:30 PM - Prayer Break</li>
+            <li>06:30 PM - End of Day 2</li>
+          </ul>
+        </div>
+        <div
+          style={{
+            width: 0,
+            borderColor: "#F5BC02",
+            height: 200,
+            borderWidth: 2,
+            borderStyle: "solid",
+            marginLeft: 20,
+            marginRight: 15,
+          }}
+        ></div>
+        <div style={{ textAlign: "center" }}>
+          <h4 style={{ marginBottom: "10px" }}>Day 3</h4>
+          <ul style={{ listStyle: "none", padding: 0 }}>
+            <li>10:00 AM - Registration</li>
+            <li>11:00 AM - Panel Discussion</li>
+            <li>01:00 PM - Lunch Break</li>
+            <li>02:00 PM - Demo Da'waah</li>
+            <li>03:30 PM - Closing Ceremony and Dua</li>
+            <li>04:30 PM - End of Workshop</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  );
+};
 export default App;

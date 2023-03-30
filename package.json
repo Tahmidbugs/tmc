@@ -2,6 +2,8 @@
   "scripts": {
     "build": "cd app && npm install && npm run build",
     "predeploy": "npm run build"
-  
+  },
+  "dependencies": {
+    "react-icons": "^4.8.0"
   }
 }
