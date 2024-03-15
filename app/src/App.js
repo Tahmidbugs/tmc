@@ -17,7 +17,7 @@ import Lottie from "react-lottie";
 import CountdownTimer from "./components/CountdownTimer";
 function App() {
   const googleFormsEmbedCode =
-    '<iframe src="https://docs.google.com/forms/d/e/1FAIpQLScZSG3ERaPIYhBclG1NOMkO6Jm5hhwVj7rVrqsIy5Jw8Heeow/viewform?embedded=true" width="740" height="2685" frameborder="0" marginheight="0" marginwidth="220">Loading…</iframe>';
+    '<iframe src="https://docs.google.com/forms/d/e/1FAIpQLScHMvBI_nra3e00MxVNJL7XUIXg_3UO--rs0T7BSJoQr_06RQ/viewform?pli=1" width="740" height="2685" frameborder="0" marginheight="0" marginwidth="220">Loading…</iframe>';
 
   return (
     <div className="App">
@@ -83,16 +83,6 @@ function App() {
               }}
             >
               <img src={logo} alt="IERA logo" className="logo2" />
-              {/* <h1
-                className="title changecolor"
-                style={{
-                  marginTop: -20,
-                  fontFamily: "Righteous",
-                  textAlign: "center",
-                }}
-              >
-                Come To Success
-              </h1> */}
             </div>
             <img src={tmc} alt="TMC logo" className="logo tmclogo" />
           </div>
@@ -137,7 +127,7 @@ function App() {
               }}
               className="changecolor"
             >
-              COME TO SUCCESS DA'WAH CONFERENCE <br />
+              SOUTHERN DAWAH CONFERENCE <br />
               <span style={{ fontSize: 15 }}>IS RIGHT AROUND THE CORNER</span>
             </h1>
             <div
@@ -167,7 +157,7 @@ function App() {
               </h5>
             </div>
           </div>
-          <CountdownTimer targetDate="2023-05-12T00:00:00" />
+          <CountdownTimer targetDate="2024-05-10T00:00:00" />
           <div
             style={{
               display: "flex",
@@ -210,7 +200,7 @@ function App() {
                 }}
               >
                 <span className="changecolor">SAVE THE DATES: </span>
-                May 12th - May 14th, 2023&nbsp;
+                May 10th - May 13th, 2024&nbsp;
                 <br />
                 <span className="changecolor">WHERE IS IT? </span>Memphis,
                 Tennessee (Memphis Islamic Center, 10299 Humphrey Road)
@@ -347,7 +337,7 @@ const Schedule = () => {
             <li>02:00 PM - Why do Da'waah</li>
             <li>03:30 PM - Etiquettes of Da'wah</li>
             <li>04:30 PM - Prayer Break</li>
-            <li>05:00 PM - Sheikh Hassan Sultan's lecture</li>
+            <li>05:00 PM - Sheikh .... lecture</li>
             <li>06:30 PM - End of Day 1</li>
           </ul>
         </div>
@@ -368,7 +358,7 @@ const Schedule = () => {
             <li>10:00 AM - Registration</li>
             <li>11:00 AM - Qur'an Recitation</li>
             <li>01:00 PM - Dawa'h preliminaries</li>
-            <li>02:00 PM - Sheikh Anwar Arafat's lecture</li>
+            <li>02:00 PM - Sheikh .... lecture</li>
             <li>03:30 PM - Q&A Session</li>
             <li>04:30 PM - Prayer Break</li>
             <li>06:30 PM - End of Day 2</li>
