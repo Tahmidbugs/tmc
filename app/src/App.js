@@ -382,8 +382,32 @@ const Schedule = () => {
             <li>11:00 AM - Panel Discussion</li>
             <li>01:00 PM - Lunch Break</li>
             <li>02:00 PM - Demo Da'waah</li>
-            <li>03:30 PM - Closing Ceremony and Dua</li>
-            <li>04:30 PM - End of Workshop</li>
+            <li>03:30 PM - Sheikh Hassan Sultan lecture</li>
+            <li>04:30 PM - Prayer Break</li>
+            <li>06:30 PM - End of Day 3</li>
+          </ul>
+        </div>
+        <div
+          style={{
+            width: 0,
+            borderColor: "#F5BC02",
+            height: 200,
+            borderWidth: 2,
+            borderStyle: "solid",
+            marginLeft: 20,
+            marginRight: 15,
+          }}
+        ></div>
+        <div style={{ textAlign: "center" }}>
+          <h4 style={{ marginBottom: "10px" }}>Day 4</h4>
+          <ul style={{ listStyle: "none", padding: 0 }}>
+            <li>10:00 AM - Registration</li>
+            <li>11:00 AM - Closing Ceremony Competition</li>
+            <li>01:00 PM - Lunch Break</li>
+            <li>02:00 PM - Sheikh Majed Mahmoud lecture</li>
+            <li>03:30 PM - Q&A Session</li>
+            <li>04:30 PM - Prayer Break</li>
+            <li>06:30 PM - Ending notes</li>
           </ul>
         </div>
       </div>
